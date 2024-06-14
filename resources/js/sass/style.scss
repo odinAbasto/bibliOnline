@@ -1,0 +1,43 @@
+@import "./abstracts/abstracts";
+@import "./vendors/vendors";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";
+@import "./themes/themes";
+@import "settings";
+
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.loading-hide{
+    display: none;
+}
+
+.bi::before{
+    font-size: 1.2rem;
+    color: black;
+}
+.button-icon::before{
+    color: white;;
+}
+
+.bi-pencil-fill::before{
+    color: rgb(214, 185, 58);
+}
+
+.detail-eye{
+    color: white;
+    display: flex;
+}
+a+i.detail-eye{
+    &::before{
+        color: white;
+    }
+    
+}
+a:hover+i.detail-eye{
+    &::before{
+        color: black;
+    }
+    
+}

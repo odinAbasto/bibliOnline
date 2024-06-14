@@ -1,0 +1,16 @@
+.btn {
+    display: inline-block;
+    width: fit-content;
+    color:white;
+    text-decoration:none;
+    padding:0.5rem  1rem;
+    border-radius:3px;
+   }
+
+.btn-green {
+    @include button-bg(#14bdad);
+ }
+ .btn-danger{
+    @include button-bg(#ff0000);
+ }
+ 
